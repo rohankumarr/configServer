@@ -1,1 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/movies?createDatabaseIfNotExist=true
+    username: root
+    password: Rohan@1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
